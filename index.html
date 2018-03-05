@@ -1,0 +1,18 @@
+<h1>Adopt A Pet!</h1>
+<div id="app">
+    <p>Look for pets in near {{ zipCode }}</p>
+    <input v-model="zipCode"><button @click="getPets">Search</button>
+    <div v-if="petList">
+        <div v-for="pet in petList">
+            <p v-if="pet.name">{{ pet.name.$t }}</p>
+            <p v-if="pet.age">{{ pet.age.$t }}</p>
+            <p v-if="pet.description">{{ pet.description.$t }}</p>
+            <img v-if="pet.media && pet.media.photos" :src="pet.media.photos.photo[0].$ts">
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="./index.js"></script>

@@ -1,0 +1,13 @@
+{
+  "name": "code-crush-pets",
+  "description": "demo of pet application",
+  "type": "package",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Taylor Rohrer",
+      "email": "tjscott88@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable"
+}
